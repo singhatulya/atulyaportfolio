@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <p class="title">My Portfolio</p>
+        <button id = 'button'>☀️</button>
+        <p id="time">TIME</p>
+        <p class = "myname">Hi, My name is</p>
+        <p class = "name">Atulya Singh</p>
+        <p class="intro">A teenager from India whose on Hackclub for 2 years.</p>
+        <div class="interest">
+            <h2>My Interests</h2>
+            <p>I like Coding in HTML, CSS, Python and a bit of C.</p>
+            <p>I also like playing games.</p>
+        </div>
+        <h2>Useful Links for my Creations</h2>
+        <br><br><a href="https://github.com/singhatulya">Check Out my Github</a>
+        <br><br><br><a href="https://github.com/singhatulya/CarGame" class="project">Car Game made in Python using Pygame</a>
+        <br><br><br><a href="https://github.com/singhatulya/easyarch" class="project">Easier Arch Install made in HTML</a>
+        
+        
+    </body>
+    <style>
+        body{
+            background-color:#9cb3ff;
+            font-family: "Montserrat";
+            margin-left: 3%;
+            margin-right: 3%;
+            transition: 0.5s ease;
+            margin-top: 60px;
+        }
+        body.dark{
+            background-color:#0b0031;
+            color:rgb(240,240,240)
+        }
+        .title{
+            text-align:left;
+            margin-top: 2.5%;
+            font-size: 160%;
+            font-weight: bold;
+            color:#2b00b8;
+            transition: 0.2s ease;
+        }
+        body.dark .title{
+            color:#b7a1ff;
+        }
+        .title:hover{
+            font-size:180%;
+        }
+        .myname{
+            font-size: 120%;
+        }
+        .name{
+            font-size: 300%;
+            font-weight: bold;
+            font-family: 'Space Mono';
+            text-align: center;
+            color: rgb(0, 94, 255);
+            background-color: rgb(225, 209, 255);
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 3%;
+            border-radius: 10px;
+            border: 3px solid;
+            transition: 0.3s ease;
+        }
+        .name:hover{
+            background-color: rgb(194, 162, 255);
+            color:rgb(17, 0, 255);
+            font-size: 320%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(225, 225, 225);
+            background-color: rgb(20,20,20);
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.2s ease;
+            margin:2%;
+            border: 2px solid;
+            cursor: pointer;
+        }
+        a:hover{
+            font-size: 105%;
+            color: black;
+            background-color: rgb(236, 236, 236);
+            font-weight: bold;
+            border: 3px solid;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        h2{
+            text-align:center;
+            transition: 0.2s ease;
+        }
+        
+        h2:hover{
+            font-size:180%;
+            color:rgb(0, 94, 255);
+        }
+
+        body.dark h2:hover{
+            color:rgb(141, 141, 251)
+        }
+        .interest{
+            background-color:rgba(240, 240, 240, 0.344);
+            padding: 1.5%;
+            border-radius: 20px;
+            font-size: 120%;
+            border: 2px solid;
+            border-color: blueviolet;
+        }
+        .project{
+            background-color: rgba(255, 173, 173, 0.4);
+            color: black;
+            border: 2px solid;
+        }
+
+        body.dark .project{
+            background-color: rgb(255,180,180);
+        }
+        button{
+            background-color: rgb(250,250,250);
+            border: 1px solid;
+            position: fixed;
+            right: 20px;
+            top: 15px;
+        }
+        body.dark button{
+            background-color: rgb(50,50,50);
+        }
+        #time{
+            position: fixed;
+            left: auto;
+            top: 0px;
+            background-color: rgba(0,0,0,0.5);
+            padding: 4px;
+            color: white;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.8);
+            transition: ease 0.2s;
+        }
+        body.dark #time{
+            background-color: rgba(255,255,255,0.8);
+            color: black;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+        }
+        #time:hover{
+            font-weight: bold;
+            border-width: 2px;
+        }
+    </style>
+    <script>
+        const dark = document.getElementById('button');
+
+        dark.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            if (document.body.classList.contains("dark")) {
+                button.textContent = "🌙";
+            } else {
+                button.textContent = "☀️";
+        }
+        })
+        
+        function update(){
+            const time = new Date();
+            document.getElementById("time").textContent = time.toLocaleTimeString();
+        }
+
+        update();
+        setInterval(update,1000);
+    </script>
+</html>
