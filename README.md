@@ -2,7 +2,7 @@
 I had made many HTML and CSS projects but never a JS one. I created my portfolio not only to showcase a bit about myself but also to warm up on my HTML and CSS.
 
 ## Features
-. It has my name very big in the center of screen so you know.
+>> It has my name very big in the center of screen so you know.
 . Some projects I made
 . My GitHub link.
 ### JavaScript Part
