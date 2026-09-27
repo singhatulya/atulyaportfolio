@@ -7,7 +7,8 @@ It's a website which tells about myself and the projects I made.
 It's a portfolio made in HTML, CSS and JavaScript. It has a theme switcher and shows time in the corner.
 
 ### Screenshots
-Atleast one relavant screenshot of the program
+
+![Alt text](image.png)
 
 ## Getting Started
 
