@@ -1,13 +1,25 @@
-# MY Portfolio
-I had made many HTML and CSS projects but never a JS one. I created my portfolio not only to showcase a bit about myself but also to warm up on my HTML and CSS.
+# My Portfolio
 
-## Features
-- It has my name very big in the center of screen so you know.
-- Some projects I made
-- My GitHub link.
-### JavaScript Part
-This was my first time using JS and that too without AI.
-- Dark/Light Theme Switch Button Fixed at the top.
-- And a clock at the top-left because why not.
+It's a website which tells about myself and the projects I made.
 
-This can be run on any browser and the webpage is very lightweight.
+## Description
+
+It's a portfolio made in HTML, CSS and JavaScript. It has a theme switcher and shows time in the corner.
+
+### Screenshots
+Atleast one relavant screenshot of the program
+
+## Getting Started
+
+### Dependencies
+
+Any normal Browser capable of running full modern HTML, CSS and JavaScript,
+
+
+### Executing program
+
+Just open the link and it will run. no external programs required.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
