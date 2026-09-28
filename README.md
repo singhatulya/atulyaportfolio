@@ -4,7 +4,7 @@ It's a website which tells about myself and the projects I made.
 
 ## Description
 
-It's a portfolio made in HTML, CSS and JavaScript. It has a theme switcher and shows time in the corner.
+It's a portfolio made in HTML, CSS and JavaScript. It has a theme switcher and shows time in the corner. Uses Plain Background Color. does not use white and black for themes so that it looks cleaner. it also has custom cursor
 
 ### Screenshots
 
